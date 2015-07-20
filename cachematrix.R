@@ -51,11 +51,13 @@ cacheSolve <- function(x, ...) {
         
 }
 
+
+##checked that it was working by generating a 4x4 matrix
+#using runif to generate the matrix elements
+
 amatrix <- matrix(runif(16,1,10),4,4)
 amatrix
 a <- makeCacheMatrix(amatrix)
 cacheSolve(a)
 
 
-?solve
-solve(amatrix)
